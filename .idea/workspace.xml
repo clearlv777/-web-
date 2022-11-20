@@ -9,23 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65997f49-0ed0-4115-ab88-2573fa3ea2e8" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/config/JdbcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/config/MybatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/config/ServletConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/config/SpringMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/controller/testController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="65997f49-0ed0-4115-ab88-2573fa3ea2e8" name="变更" comment="web环境搭建">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/config/SpringMvcSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/controller/ManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/dao/ManagerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/dao/TestDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/domain/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/service/ManagerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/service/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/service/impl/ManagerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nwpu/web/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nwpu/web/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/config/SpringMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nwpu/web/controller/testController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nwpu/web/controller/testController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +34,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,11 +66,24 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Users/17274/ideaProject/springmvc_11_page",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "工件",
     "project.structure.proportion": "0.15039062",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.31990793",
+    "spring.configuration.checksum": "6e35b4d059e54d648fbcdc025b20b11a"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="nwpu.web.config" />
+    </key>
+  </component>
   <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.5.82">
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="运行单个请求">
       <method v="2" />
@@ -172,6 +187,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="65997f49-0ed0-4115-ab88-2573fa3ea2e8" name="变更" comment="" />
@@ -179,8 +197,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668166435786</updated>
-      <workItem from="1668166438043" duration="6651000" />
+      <workItem from="1668166438043" duration="7791000" />
+      <workItem from="1668180802823" duration="34000" />
+      <workItem from="1668223065724" duration="2168000" />
+      <workItem from="1668941823971" duration="6695000" />
     </task>
+    <task id="LOCAL-00001" summary="web环境搭建">
+      <created>1668173683984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668173683984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,5 +225,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="web环境搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="web环境搭建" />
   </component>
 </project>

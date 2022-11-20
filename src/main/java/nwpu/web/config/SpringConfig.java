@@ -4,6 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * spring配置类
@@ -16,5 +17,6 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:jdbc.properties")
 //加载jdbcConfig配置类
 @Import({JdbcConfig.class,MybatisConfig.class})
+@EnableTransactionManagement
 public class SpringConfig {
 }
