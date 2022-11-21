@@ -17,6 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @PropertySource("classpath:jdbc.properties")
 //加载jdbcConfig配置类
 @Import({JdbcConfig.class,MybatisConfig.class})
+//管理事务
 @EnableTransactionManagement
 public class SpringConfig {
 }
