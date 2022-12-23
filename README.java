@@ -2210,7 +2210,7 @@ public class StringUtils {
      * @since 3.10
      */
     public static <T extends CharSequence> T getIfBlank(final T str, final Supplier<T> defaultSupplier) {
-        return isBlank(str) ? defaultSupplier == null ? null : defaultSupplier.get() : str;
+        return isBlank(str) ? null : str;
     }
 
     /**
@@ -2238,7 +2238,7 @@ public class StringUtils {
      * @since 3.10
      */
     public static <T extends CharSequence> T getIfEmpty(final T str, final Supplier<T> defaultSupplier) {
-        return isEmpty(str) ? defaultSupplier == null ? null : defaultSupplier.get() : str;
+        return isEmpty(str) ? null : str;
     }
 
     /**
@@ -2891,7 +2891,6 @@ public class StringUtils {
         final int csLast = csLen - 1;
         final int searchLen = searchChars.length;
         final int searchLast = searchLen - 1;
-        outer:
         for (int i = 0; i < csLen; i++) {
             final char ch = cs.charAt(i);
             for (int j = 0; j < searchLen; j++) {
@@ -9634,17 +9633,6 @@ public class StringUtils {
             builder.append(wrapWith);
         }
         return builder.toString();
-    }
-
-    /**
-     * <p>{@code StringUtils} instances should NOT be constructed in
-     * standard programming. Instead, the class should be used as
-     * {@code StringUtils.trim(" foo ");}.</p>
-     *
-     * <p>This constructor is public to permit tools that require a JavaBean
-     * instance to operate.</p>
-     */
-    public StringUtils() {
     }
 
 }
